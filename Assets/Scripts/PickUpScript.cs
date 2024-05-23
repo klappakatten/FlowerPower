@@ -115,4 +115,11 @@ public class PickUpScript : MonoBehaviour
             //if your player is small, change the -0.5f to a smaller number (in magnitude) ie: -0.1f
         }
     }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawLine(transform.position, transform.position + transform.TransformDirection(Vector3.forward) * pickUpRange);
+
+    }
+
 }

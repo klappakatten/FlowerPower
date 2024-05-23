@@ -4,10 +4,11 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Item : MonoBehaviour
+public class SeedScript : MonoBehaviour
 {
 
     static bool colidedOnce = false;
+    public GameObject myFlowerObject;
 
     // Start is called before the first frame update
     void Start()
@@ -26,14 +27,14 @@ public class Item : MonoBehaviour
     {
         if (collision.collider.CompareTag("canPickUp"))
         {
-            if (Item.colidedOnce == false)
+            if (SeedScript.colidedOnce == false)
             {
-                Item.colidedOnce = true;
+                SeedScript.colidedOnce = true;
                 Debug.Log("Item Collided");
             }
             else
             {
-                Item.colidedOnce = false;
+                SeedScript.colidedOnce = false;
                 Destroy(gameObject);
             }
         }
