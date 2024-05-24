@@ -15,6 +15,12 @@ public class SeedScript : MonoBehaviour
     public eFlowerType type = eFlowerType.Flower1;
 
 
+    public seedType tajp;
+
+    public enum seedType
+    {
+        Seed1, Seed2, Seed3
+    }
 
     private void OnCollisionEnter(Collision collision)
     {

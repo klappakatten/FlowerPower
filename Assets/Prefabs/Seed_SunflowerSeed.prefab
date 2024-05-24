@@ -120,6 +120,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myFlowerType: 3
+  type: 1
+  tajp: 2
 --- !u!54 &648640594912449317
 Rigidbody:
   m_ObjectHideFlags: 0
