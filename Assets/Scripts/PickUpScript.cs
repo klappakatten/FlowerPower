@@ -32,7 +32,7 @@ public class PickUpScript : MonoBehaviour
             {
                 //perform raycast to check if player is looking at object within pickuprange
                 RaycastHit hit;
-                if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, pickUpRange))
+                if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, pickUpRange))
                 {
                     //make sure pickup tag is attached
                     if (hit.transform.gameObject.tag == "canPickUp")
@@ -96,7 +96,7 @@ public class PickUpScript : MonoBehaviour
         heldObj.layer = 0;
         heldObjRb.isKinematic = false;
         heldObj.transform.parent = null;
-        heldObjRb.AddForce(transform.forward * throwForce);
+        heldObjRb.AddForce(Camera.main.transform.forward * throwForce);
         heldObj = null;
     }
     void StopClipping() //function only called when dropping/throwing
@@ -117,7 +117,7 @@ public class PickUpScript : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawLine(transform.position, transform.position + transform.TransformDirection(Vector3.forward) * pickUpRange);
+        Gizmos.DrawLine(Camera.main.transform.position, Camera.main.transform.position + Camera.main.transform.TransformDirection(Vector3.forward) * pickUpRange);
 
     }
 
