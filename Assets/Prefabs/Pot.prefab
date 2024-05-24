@@ -166,6 +166,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myFlowerSpawnPos: {fileID: 445159928901178175}
+  flowerlist:
+  - {fileID: 7032277290317000986, guid: 6fa9b925847092347be12b30fdfd9f1e, type: 3}
+  - {fileID: 3574681269490134016, guid: 3f7b49ba6eec65a4cb9f4ede807c8df5, type: 3}
+  - {fileID: 5048559383943772028, guid: 4d743dae85f4e83488668cf3c746a585, type: 3}
+  - {fileID: 7086385282281838627, guid: d2d981b4d3c7e824585bdbff157518e6, type: 3}
+  - {fileID: 8041419694704313747, guid: aba653ee8e33c7345946863af2f89d3f, type: 3}
+  - {fileID: 738477022156282057, guid: c5da1979c6e1e28459154b1b947e73ed, type: 3}
+  - {fileID: 3698188741990053440, guid: 56fabff11932eb54bbb80e516806b97c, type: 3}
+  - {fileID: 4661383688802966063, guid: cf96943435a79b74cabbffd712faa894, type: 3}
+  - {fileID: 5323841050758613217, guid: 72c2350d256d60646a3d47634e9967fb, type: 3}
 --- !u!65 &3157274843815771246
 BoxCollider:
   m_ObjectHideFlags: 0
