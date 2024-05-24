@@ -6,13 +6,13 @@ using UnityEngine;
 public class GlobalFlowerScript : MonoBehaviour
 {
     [SerializeField]
-    private GameObject myHydrangea;
+    private GameObject myFlower1;
     [SerializeField]
-    private GameObject myLilyOfTheValley;
+    private GameObject myFlower2;
     [SerializeField]
-    private GameObject mySunflower;
+    private GameObject myFlower3;
     [SerializeField]
-    private GameObject myTulip;
+    private GameObject myFlower4;
     [SerializeField]
     private GameObject myFlower5;
     [SerializeField]
@@ -30,10 +30,10 @@ public class GlobalFlowerScript : MonoBehaviour
     public enum eFlowerType
     {
         DEFAULT = 0,
-        Hydrangea,
-        LilyOfTheValley,
-        Sunflower,
-        Tulip,
+        Flower1,
+        Flower2,
+        Flower3,
+        Flower4,
         Flower5,
         Flower6,
         Flower7,
@@ -45,24 +45,24 @@ public class GlobalFlowerScript : MonoBehaviour
     {
         switch (aFlowerType)
         {
-            case eFlowerType.Hydrangea:
+            case eFlowerType.Flower1:
                 {
-                    return myHydrangea;
+                    return myFlower1;
                 }
 
-            case eFlowerType.LilyOfTheValley:
+            case eFlowerType.Flower2:
                 {
-                    return myLilyOfTheValley;
+                    return myFlower2;
                 }
 
-            case eFlowerType.Sunflower:
+            case eFlowerType.Flower3:
                 {
-                    return mySunflower;
+                    return myFlower3;
                 }
 
-            case eFlowerType.Tulip:
+            case eFlowerType.Flower4:
                 {
-                    return myTulip;
+                    return myFlower4;
                 }
 
             case eFlowerType.Flower5:

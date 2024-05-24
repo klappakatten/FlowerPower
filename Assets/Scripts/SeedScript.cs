@@ -12,6 +12,8 @@ public class SeedScript : MonoBehaviour
     //public GameObject myFlowerObject;
     public GlobalFlowerScript.eFlowerType myFlowerType = GlobalFlowerScript.eFlowerType.DEFAULT;
 
+    public eFlowerType type = eFlowerType.Flower1;
+
 
 
     private void OnCollisionEnter(Collision collision)
@@ -20,7 +22,7 @@ public class SeedScript : MonoBehaviour
         {
             SeedScript otherSeed = collision.collider.GetComponent<SeedScript>();
             if (myFlowerType == otherSeed.myFlowerType
-                || myFlowerType == GlobalFlowerScript.eFlowerType.Tulip
+                || myFlowerType == GlobalFlowerScript.eFlowerType.Flower4
                 || myFlowerType == GlobalFlowerScript.eFlowerType.Flower5
                 || myFlowerType == GlobalFlowerScript.eFlowerType.Flower6
                 || myFlowerType == GlobalFlowerScript.eFlowerType.Flower7
@@ -29,7 +31,7 @@ public class SeedScript : MonoBehaviour
             {
                 return;
             }
-
+               
             if (SeedScript.colidedOnce == false)
             {
                 SeedScript.colidedOnce = true;

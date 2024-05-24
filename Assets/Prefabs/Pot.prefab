@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 3198196802963923580}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.1601, z: 0}
+  m_LocalPosition: {x: 0, y: 0.17, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myFlowerSpawnPos: {fileID: 445159928901178175}
-  flowerlist:
+  flowerList:
   - {fileID: 7032277290317000986, guid: 6fa9b925847092347be12b30fdfd9f1e, type: 3}
   - {fileID: 3574681269490134016, guid: 3f7b49ba6eec65a4cb9f4ede807c8df5, type: 3}
   - {fileID: 5048559383943772028, guid: 4d743dae85f4e83488668cf3c746a585, type: 3}
